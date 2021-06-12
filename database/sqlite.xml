@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Context path="/openolat" docBase="_INSTALL_DIR_/webapp" debug="0" reloadable="false" allowLinking="true">
+ <Resources
+        cachingAllowed="true"
+        cacheMaxSize="100000"
+    />
   <Resource name="jdbc/OpenOLATDS" auth="Container" type="javax.sql.DataSource"
      maxActive="32" maxIdle="8" maxWait="60000"
      driverClassName="org.sqlite.JDBC"
